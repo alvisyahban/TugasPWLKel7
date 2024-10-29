@@ -75,6 +75,35 @@
         </ul>
     </aside>
 
+    <!-- Main Content Area -->
+    <main class="ml-64 flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="flex items-center justify-between bg-gray-50 dark:bg-fuchsia-700 p-6 shadow-lg">
+            <div class="flex items-center">
+                <button class="md:hidden p-2 text-gray-600" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div class="text-2xl font-bold text-gray-700 dark:text-white">Dashboard</div>
+            </div>
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="flex items-center space-x-2">
+                    <img src="assets/1.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <!-- Profile Dropdown -->
+                <div id="profileDropdown" class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-fuchsia-700 rounded-lg shadow-lg py-2">
+                    <a href="profilecard.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Profile</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Settings</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        </main>
       <!-- Recent Tasks Section -->
                 
     </div>
